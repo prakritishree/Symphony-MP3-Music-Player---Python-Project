@@ -19,7 +19,7 @@ pillow,
 pygame,
 mutagen.<br>
 
-For adding some isual appeal, a gif has been inserted which will continuously play until the window is closed.
+For adding some visual appeal, a gif has been inserted which will continuously play until the window is closed.
 
 Here is the screenshot of the same:<br>
 <img src="https://github.com/prakritishree/Symphony-MP3-Music-Player---Python-Project/blob/main/final%20output.PNG">
