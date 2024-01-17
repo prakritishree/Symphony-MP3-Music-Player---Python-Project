@@ -5,7 +5,7 @@ Symphony takes input of any folder using the browse music button and picks only 
 play, 
 pause,
 fast forward (5 seconds ahead),
-fast backword (5 seconds back),
+fast backward (5 seconds back),
 scale for moving song position from any one time instant to another,
 next song ,
 previous song ,
