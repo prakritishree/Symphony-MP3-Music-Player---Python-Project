@@ -169,28 +169,28 @@ def Prev():
 #making the 5 sec before button
 def back5():
     converted_song_time=song_time()
-    global slider_update, cur_time
+    global slider_update, cur_time, converted_cur_time
     mixer.music.load(Playlist.get(ACTIVE))
     slider_update-=5
+    cur_time=slider_update
     mixer.music.play(loops=0, start=slider_update)
     converted_cur_time=time.strftime('%M:%S',time.gmtime(slider_update))
     time_bar.config(text=f'time elapsed : {converted_cur_time} of {converted_song_time}')
     slider_pos=int(song_length)
     slider.config(to=slider_pos, value=slider_update)
-    cur_time=slider_update
 
 #making the 5 sec after button
 def forward5():
     converted_song_time=song_time()
-    global slider_update, cur_time
+    global slider_update, cur_time, converted_cur_time
     mixer.music.load(Playlist.get(ACTIVE))
     slider_update+=5
+    cur_time=slider_update
     mixer.music.play(loops=0, start=slider_update)
     converted_cur_time=time.strftime('%M:%S',time.gmtime(slider_update))
     time_bar.config(text=f'time elapsed : {converted_cur_time} of {converted_song_time}')
     slider_pos=int(song_length)
     slider.config(to=slider_pos, value=slider_update)
-    cur_time=slider_update
 
 lower_frame=Frame(root, bg="#B095DE", width=595, height=160)
 '''This part is creating a new frame widget. A frame is like a container that you can use to organize and hold other widgets (like buttons, labels, etc.).
